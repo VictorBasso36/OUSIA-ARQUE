@@ -854,8 +854,8 @@ nav a span:hover{
     }
     
     #scene{
-        background-image: url("./src/img/bgresponsivopri9meiro.png");
-        background-position-y:x ;
+        background-image: url('../img/bgresponsivopri9meiro.png');
+        
         background-size: cover;
     }
     .backgroundburaco{
