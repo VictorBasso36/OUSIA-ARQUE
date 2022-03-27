@@ -68,6 +68,10 @@ body{
     margin-bottom: 30px!important;
     
 }
+.alinhacontainer{
+    display: flex!important; justify-content: center; flex-direction: column; height: 100vh;
+        align-items: center;left:unset; position: relative!important;
+}
 .container{
     
     justify-content: none;
@@ -77,9 +81,9 @@ body{
     padding-top:60px;
     padding-left:60px;
     padding-right:60px;
-    width: 100vw;
+    width: 90vw;
     min-width: 300px;
-    max-width: 3000px;
+    max-width: 2000px;
     height: 100vh;
 }
 
@@ -88,7 +92,8 @@ header{
     z-index: 5;
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    width: 100%;
+    max-width: 100%;
     height: 150px;
     align-items: center;
 }
@@ -496,27 +501,30 @@ nav a span:hover{
     background-image: url("../img/BG2.png");
     height: 100vh;
     width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: rgb(35, 29, 71);
 }
 .container2{
     align-items: center;
     display: flex!important;
     flex-direction: column;
-    padding-top:60px;
     padding-left: 60px;
+    padding-top: 60px;
     padding-right: 60px;
     justify-content: center;
-    width: 100%;
+    width: 90vw;
     min-width: 300px;
     max-width: 2000px;
-    height: 100%;
+    height: 100vh;
 }
 .itensalign2{
     display:flex;
     justify-content: right;
     align-items: end;
     flex-direction: column;
-    width: 90%;
+    width: 100%;
     height: 100%;
    
 }
@@ -601,10 +609,10 @@ nav a span:hover{
     align-items: center;
     display: flex;
     flex-direction: column;
-    padding-top:60px;
+    padding-top:60px;   
     padding-left: 60px;
     padding-right: 60px;
-    width: 100vw;
+    width: 90vw;
     min-width: 300px;
     max-width: 2000px;
     height: 100vh;
@@ -617,10 +625,11 @@ nav a span:hover{
 .divborderalign{
     display: flex;
     align-items: center;
+    width: 90vw;
     justify-content: center;
 }
 .alinhadivsfim{
-    width: 90%;
+    
     height:70vh;
     align-items: center;
     justify-content: space-between;
@@ -652,15 +661,15 @@ nav a span:hover{
 }
 .logomarcas{
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     overflow: hidden;
     width: 80%;
-    height: 500px;
+    height: 100vh;
 }
 .logomarcas img{
     z-index: -30;
-    width:1100px;
+    width:50rem;
     position:absolute;
 }
 .astroslide button{
@@ -698,12 +707,12 @@ nav a span:hover{
 
 }
 .textarquelab .textagencia{
-    height: 100px;
+    height: 6rem;
     
     overflow: hidden;
 }
 .textarquelab .textagencia2{
-    height: 80px;
+    height: 6rem;
     
     overflow: hidden;
 }
@@ -824,6 +833,10 @@ nav a span:hover{
     display: none;
 }
 @media screen and (min-height:280px) and (max-height:550px){
+
+    .PrimeiraTela{
+        height: 180vh;
+    }
     #scene{
         height: 180vh!important;
     }
@@ -834,7 +847,11 @@ nav a span:hover{
 
     #slide3{
         height: 200vh!important;
+        justify-content: unset!important;
         
+    }
+    .alinhadivsfim{
+        height: 200vh!important;
     }
     .container3{
         height: 200vh;
@@ -846,7 +863,11 @@ nav a span:hover{
     }
 }
 @media screen and (min-height:550px) and (max-height:800px){
-    
+    /*telas2*/
+
+    .videooo{
+        height: 200px;
+    }
 }
 @media screen and (min-width:320px) and (max-width: 500px) {
     .PrimeiraTela{
@@ -886,7 +907,7 @@ nav a span:hover{
 
     .container{
         align-items: center;
-        padding: 0px;
+        
     }
     .logo{
         width: 80%;
@@ -1111,7 +1132,7 @@ height: 100vh;
 
     .container{
         align-items: center;
-        padding: 0px;
+
     }
     .logo{
         width: 80%;
@@ -1230,7 +1251,7 @@ height: 100vh;
     height: 100vh!important;
     display: flex-end!important;
     
-    padding-top: 30px!important;
+    
 }
 .alinhadivsfim{
     width: 90vw;
@@ -1308,8 +1329,7 @@ height: 100vh;
         background-size: cover;
     }
     .container{
-        padding-left: 0px;
-        padding-top: 60px;
+        
         align-items: center;
     
         
@@ -1364,6 +1384,7 @@ height: 100vh;
     position: static!important;
 }
 .container2{
+    padding-top: 0px;
     justify-content: unset;
 }
 .astropage2{
@@ -1397,10 +1418,12 @@ height: 100vh;
 }
 
 .pprincipalpage1{
+    text-shadow: -1px 1px 2px #000000;
     width: 100%!important;
     
 }
 .pprincipalpage2{
+    text-shadow: -1px 1px 2px #000000;
     width: 100%!important;
 }
 .videooo{
@@ -1410,6 +1433,7 @@ height: 100vh;
     width: 100%;
 }
 #btnleiamais{
+    pointer-events: visiblePainted;
     background-color: transparent;
     border: none;
     color: #72afb5;
@@ -1498,7 +1522,7 @@ height: 100vh;
         background-size: cover;
     }
     .container{
-        padding-left: 0px;
+        
         padding-top: 60px;
     }
     .textebutton{
@@ -1551,7 +1575,8 @@ height: 100vh;
     position: static!important;
 }
 .container2{
-    justify-content: unset;
+    padding-top: 0px;
+    
 }
 .astropage2{
     display:none!important;
@@ -1563,7 +1588,7 @@ height: 100vh;
 #slide2{
     background-image: url("../img/bgteste2.png")!important;
     background-size: cover!important;
-    height: 100vh!important;
+    height: 100vh;
 }
 
 
@@ -1585,9 +1610,11 @@ height: 100vh;
 
 .pprincipalpage1{
     width: 100%!important;
+    text-shadow: 1px 1px 1px #000000;
     
 }
 .pprincipalpage2{
+    text-shadow: 1px 1px 1px #000000;
     width: 100%!important;
 }
 .videooo{
@@ -1807,19 +1834,24 @@ height: 100vh;
 }
 
 /*tela3*/
-
+.alinhadivsfim{
+    align-items: flex-end;
+  
+}
 .astroslide{
-
+    height: 100vh;
+    align-items: flex-end;
     width: 40%;
 }
 .logomarcas img{
-    width: 80%!important;
+    width: 60%!important;
+
 }
 .left{
-    margin-top: 60%;
+    margin-top: 40%;
 }
 .right{
-    margin-top: 60%;
+    margin-top: 40%;
 }
 }
 @media (min-width: 1280px) and (max-width:1500px) {
@@ -1848,6 +1880,10 @@ height: 100vh;
 
 
 /*tela3*/
+
+.container3{
+    padding-top: 0px;
+}
 .astroslide{
 
     width: 60%;
