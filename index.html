@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+    <link rel="stylesheet" href="./src/style/style.css">
+    <title>OusíaArqué</title>
+</head>
+<body onload="">
+    <script src="./src/js/playervideo.js"></script>
+<div class="loader">
+    <img src="./src/img/loading.gif" alt="">
+</div>
+<div class="PrimeiraTela" id="scene" >
+        <img src="./src/img/BackgroundComBuracoteste.png" class="backgroundplaneta"  data-depth="0.03"    id="planetinha" alt="">
+        <img src="./src/img/astronautateste.png" class="astro" data-depth="0.1" alt="">
+        <img src="./src/img/BackgroundComBuraco.png" class="backgroundburaco" data-depth="-0.02"  alt="">
+        <div style="display: flex; justify-content: center; flex-direction: column; height: 100vh;
+        align-items: center;left:unset;">     
+        <section class="container" >
+            <header>
+                <div class="divlogo">
+                    <a  href="#scene"><img class="logo"   src="./src/img/Logoinit.png" alt=""></a>
+                </div>
+                <nav>
+                    <div class="mobile-menu">
+                        <img src="./src/img/buttonnavbar.png" class="imgimg" alt="">
+                    </div>
+                    <ul class="nav-list">
+                      <li><a href="#scene"><span>HOME</span></a></li>
+                      <li><a href="#slide2">SOBRE</a></li>
+                      <li><a href="#sldie3">EMPRESAS</a></li>
+                      <li><a href="#"><img src="./src/img/icons8-facebook-novo.svg" href=""><img src="./src/img/icons8-instagram.svg" alt=""></a></li>
+                    </ul>
+                  </nav>
+            </header>
+            <div class="textebutton">
+                <h1>Somos o presente e o<br>
+                    futuro da <span>COMUNICAÇÃO</span>.</h1>
+                <p>Sem falsas modéstias: Todas as nossas marcas foram criadas para serem as <span>MELHORES <br>  EMPRESAS</span> em comunicação. </p>
+                <button id="btn"><a href="">+ | conheça nossas marcas.</a></button>
+            </div>
+        </section>
+    </div> 
+    </div>
+    <div class="PrimeiraTela" id="slide2">
+        <section class="container2" >
+        <header>
+           <!--<div id="lottinho" style="height: 100px; width: 100px;">
+                
+            </div>--> 
+            <div class="divlogo">
+                <a  href="#scene"><img src="./src/img/logotwo.png" alt=""></a>
+            </div>
+            <nav>
+                <div class="mobile-menu2">
+                    <img src="./src/img/buttonnavbar.png" alt="">
+                </div>
+                <ul class="nav-list2">
+                  <li><a href="#scene">HOME</a></li>
+                  <li><a href="#slide2"><span>SOBRE</span></a></li>
+                  <li><a href="#slide3">EMPRESAS</a></li>
+                  <li><a href="#"><img src="./src/img/icons8-facebook-novo.svg" href=""><img src="./src/img/icons8-instagram.svg" alt=""></a></li>
+                </ul>
+              </nav>
+        </header>
+        <div class="itensalign2">
+            <div class="itens">
+                <div class="titlepage2">
+                    <h1>Sobre <span>ACREDITAR</span></h1>
+                </div>
+                <div class="textepage2">
+                    <p class="pprincipalpage1">
+                        Acreditamos que todas as pessoas tem um grande potencial,
+                        <span id="pontos">...</span>
+                        <span class="mais" style="display: none">e é assim que nosso grupo vem crescendo: Dando espaço e oportunidades para que nossa equipe troque vivências, experiências e aprendizados. Somos formados por pessoas que amam o que fazem e acreditam que podem mudar o mundo através de seus conhecimentos. <br> <br>O Grupo Ousía Arqué se empenha a diariamente desenvolver ideias e marcas para serem REVOLUÇÃO!</span>
+                        <br>
+                        <button onclick="leiaMais()" id="btnleiamais">LER MAIS</button>
+                    </p>
+                    <br>
+                    <br>
+                    <p class="pprincipalpage2" >
+
+                    </p>
+                    <br>
+                </div>
+                    <div class="alinharvid" style="width: 100%;  align-items: center; display: flex; justify-content: right;">
+                        <div class="videooo" style="background-color: black;">
+                            <iframe  width="100%" height="100%" src="https://www.youtube.com/embed/_AwSHWQ69mI?start=3" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    
+                
+                
+        </div>
+        </section>
+        <img src="./src/img/astronautapg2.png" data-depth="0.1" class="astropage2" alt="">
+        <img src="./src/img/navepage2.png" data-depth="-0.01" class="navpage2" alt="">
+        
+        
+    </div>
+    <div class="PrimeiraTela" id="slide3">
+        <section class="container3" >
+        <header>
+            <div class="divlogo">
+                <a  href="#scene"><img src="./src/img/logotwo.png" alt=""></a>
+            </div>
+            <nav>
+                <div class="mobile-menu3" onclick="trocafotoutres()">
+                    <img src="./src/img/buttonnavbar.png" alt="">
+                </div>
+                <ul class="nav-list3">
+                  <li><a href="#scene">HOME</a></li>
+                  <li><a href="#slide2">SOBRE</a></li>
+                  <li><a href="#slide3"><span>EMPRESAS</span></a></li>
+                  <li><a href="#"><img src="./src/img/icons8-facebook-novo.svg" href=""><img src="./src/img/icons8-instagram.svg" alt=""></a></li>
+                </ul>
+            </nav>
+        </header>
+            <div class="divborderalign">
+                <div class="alinhadivsfim">
+                    
+                        
+                    
+                        <div class="textmarcas">
+                            <div class="titulosmarcas">
+                                <h1 class="tituloempresa">ARQUÉ.LAB</h1>
+                                <h2 class="subtiloagencia">AGÊNCIA DE PUBLICIDADE E MARKETING FULL SERVICE </h2>
+                            </div>
+                            <div class="textarquelab">
+                            
+                                    <br>
+                                    <p class="textagencia">
+                                    A Arqué.Lab é antes de mais nada um laboratório de ideias, nos empenhamos em sempre buscar soluções criativas para as estratégias de comunicação de nossos clientes. Nosso objetivo é ser vanguarda quando o assunto for comunicação. 
+                                    </p>
+                                    <br>
+
+                                    <p class="textagencia2">
+                                    O que nos move é o desafio, então qual o objetivo da sua marca? Temos a certeza que podemos ser o caminho para este objetivo através de nossas estratégias de comunicação criativa.
+                                    </p>
+                                    <br>
+                            
+                            
+                            </div>
+                            <div class="alinharosbtn">
+                            <div class="centralizabtn">
+                                <button class="btn"><a href="" class="trocalink">www.arquelab.com.br</a></button>
+                            </div>
+                            <div class="btnlogos">
+                                    <button class="btnlogos1" style="background-color: transparent; border: none;">
+                                        <img class="iconbtn1" src="./src/img/iconlabblue.png" alt="" >
+                                        
+                                    </button>
+                                    <button class="btnlogos2" style="background-color: transparent; border: none;">
+                                        <img class="iconbtn2" src="./src/img/iconbrickswhite.png" alt="">
+                                    </button>
+                                    <button class="btnlogos3" style="background-color: transparent; border: none;">
+                                        <img class="iconbtn3" src="./src/img/icoonfilmeswhite.png" alt="">
+                                    </button>
+                                    <button class="btnlogos4" style="background-color: transparent; border: none;">
+                                        <img class="iconbtn4" src="./src/img/iconrpwhite.png" alt="">
+                                    </button>
+                            </div>
+                        </div>
+                    </div>
+                
+                        
+                    
+                    
+                          <!--<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                    <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_ux0bsocx.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;" hover   ></lottie-player>-->
+                    <div class="astroslide">
+                        <div class="logoshow">
+                            <button class="left">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34px" height="33px"><image  x="0px" y="0px" width="34px" height="33px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAhCAQAAAAW2rHnAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfmAxYJNBsAhSE4AAAByElEQVRIx5XWz0tUYRTG8cOkQQmCTDT0YwQRQkhazHZyNwXpIiFwVTAh2n8gzkZw2aagpkTdTZvCreR2aEDdCEXgphbTpo1QOQO1Ub8uJu+cc+/7vte5dzH38hw+nPe+54URJHjn2eUd/c5snn2mECRMDPMVgPcOZg6AvzwKI/n/BMAmgyabjZIj5jPiu/LyUcajt5z0qawsa9HzBblyni6gwZDKyhyrbMG3nJ4INxIiniYJF9IzkUQs8SltIS4kRDz2ERYZMUTdEE848hEaKfFTlb3hkip7rpIWD+PfsUu0VOErU/TCEPeS+9n5meCPKnxtSl6mER2kxKEqXPcSbe6751t4oBZyTI1MFA5QVcQBk76jKtRV4S9GVVhEXx/85z2+sV+4qeJnnKgul/xIfMQ+c9UMup6Pih8RrrGjSvcMM8M/lS36ESHLtmFyqmg6jek+ZmkY5oZh2qFF6ZfLrKrSHxRVVuC7ympc9CGC8NZsuGZuGWZDM8nPtNI749oy3c3v8zDu8bGLupvG+EbZdmOZb3HGex5izESgmwE/YpkW173dVEOIZir0maTbTZNCGDljFhxJp5smt9P+WgjCGsueZIwt7iDIKUxaxWn85h1aAAAAAElFTkSuQmCC" /></svg>
+                            </button>
+                            <div class="logomarcas">
+                                <img class="logoagencia" src="./src/img/astronautalab.png" alt="">
+                            </div>
+                            <button class="right">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34px" height="33px"><image  x="0px" y="0px" width="34px" height="33px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAhCAQAAAAW2rHnAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfmAxYJNRpumSDvAAABzElEQVRIx6XUwUtUURTH8cPQDJSrEozSAgkkCFy41dlNgrpIEFopOAun/2AoF4LLNgU6Tagb0U3hH+BWEkyIIFHc6GJEEEQpG6E2jt8W43vvHH33vok5dzEXfpfPnPvufU8QhG5WeYrEjmnmHUk4BOEZFWCPrpgFRQDKSUgPFeq1f425xRuCKvuRElHZbh5SVVnZh7SwopbabrL8aoQRhIxhbDd9jTD1n4ynmz5+JjHBxMf0JnUTTf2M7uajG/kfpuxGhAxLhukxzIHK5rjjQgRRFwzOGVZJO99Vtk6rGxFeq6V/DXPfMBsBE399LPNSJW2G+coDN2I3dUHeMD9Uts0jNyJMUQuXXvJKJR1sGabT94p/RlevSp6YA19zE4OcqIUlWsIkxZLqssqAi+jnXBHvTbagkt/kXM/kufmSWGJWJWdkXadjiXcmm1FJlZzrnrwwxFuV3OaDSo4C4iZSNPdjTCV3WbMH63p3NFFj1BBfrl+xeMQS440SGrFE3hDrPiJCmiACxLeRRKKONEkgwqSTuMe3RggkJadSk6AKsihRXchxON+RQTkUVyGM8AeAiRv/kebTVRePPZ+Mqwc7xC6F2AVpltl0b6Q+/gHRVMw+9To2ygAAAABJRU5ErkJggg==" /></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            
+           
+    </div><script src="./src/js/sliderlogos.js"></script>
+    <script src="./src/js/leiamaisleiamenos.js"></script>
+    <script src="./src/js/playervideo.js"></script>
+    <script src="./src/js/navbar.js"></script>
+    <script src="./src/js/navbar2.js"></script>
+    <script src="./src/js/app.js"></script>
+    <script src="./src/js/jquery-3.1.1.min.js"></script>
+    <script src="./"></script>
+    <script src="./src/js/navbar3.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.1/lottie.min.js" integrity="sha512-CWKGqmXoxo+9RjazbVIaiFcD+bYEIcUbBHwEzPlT0FilQq3TCUac+/uxZ5KDmvYiXJvp32O8rcgchkYw6J6zOA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        var params = {
+        container: document.getElementById('lottinho'), // the dom element that will contain the animation
+        renderer: 'svg',
+        loop: true,
+        autoplay: false,
+        path: '/src/js/data.json' // the path to the animation json
+            };
+
+        var anim = lottie.loadAnimation(params);
+        var initt = window.addEventListener("scroll", function(){
+
+
+            lottie.goToAndStop(3, 4, name)
+            lottie.play()
+        })
+
+    </script>
+    <script src="./src/js/loader.js"></script>
+    <script src="./src/js/jquery-1.11.1.js"></script>
+    <script src="./src/js/jquery.scrolliffy.js"></script>
+    <script>
+
+        if ((window.screen.availHeight < 600)){
+        
+                    $.scrollify.disable()
+        } else {
+           $(function() {
+         $.scrollify({
+            section : ".PrimeiraTela",
+            overflowscroll: true,
+        });
+        }); 
+        }
+
+
+        
+        
+        
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script>
+        var text= document.getElementById('planetinha');
+        var scene = document.getElementById('scene', 'slide2')
+        var parallaxInstance = new Parallax(planetinha);
+        var parallaxInstance = new Parallax(scene);
+        var parallaxInstance = new Parallax(slide2);
+    </script>
+</body>
+</html>
