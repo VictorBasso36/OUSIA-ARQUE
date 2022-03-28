@@ -4,8 +4,12 @@
     margin: 0;
     padding: 0;
 }
-body{
 
+::-webkit-scrollbar{
+    display: none;
+}
+body{
+    background-color: #19091E;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,7 +41,7 @@ body{
   }
 .PrimeiraTela{
     z-index: 15;
-    background-color: rgb(35, 29, 71);
+    background-color: #19091E;
     display: flex;
     flex-direction: column;
     align-items: center;   
@@ -321,7 +325,7 @@ nav a span:hover{
   }
 
   .nav-list2.active {
-    transform: translateX(-60px);
+    transform: translateX(-40px);
     position: fixed;
   }
   
@@ -405,7 +409,7 @@ nav a span:hover{
   }
 
   .nav-list.active {
-    transform: translateX(0px);
+    transform: translateX(-40px);
     position: fixed;
   }
   
@@ -480,7 +484,7 @@ nav a span:hover{
   }
 
   .nav-list3.active {
-    transform: translateX(0);
+    transform: translateX(0px);
     position: fixed;
   }
   
@@ -504,7 +508,8 @@ nav a span:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(35, 29, 71);
+    background-color: #19091E;
+    
 }
 .container2{
     align-items: center;
@@ -513,7 +518,7 @@ nav a span:hover{
     padding-left: 60px;
     padding-top: 60px;
     padding-right: 60px;
-    justify-content: center;
+    justify-content: start;
     width: 90vw;
     min-width: 300px;
     max-width: 2000px;
@@ -862,13 +867,8 @@ nav a span:hover{
         height: unset;
     }
 }
-@media screen and (min-height:550px) and (max-height:800px){
-    /*telas2*/
 
-    .videooo{
-        height: 200px;
-    }
-}
+
 @media screen and (min-width:320px) and (max-width: 500px) {
     .PrimeiraTela{
         justify-content:flex-start!important;
@@ -1172,6 +1172,7 @@ height: 100vh;
 #slide2{
     background-image: url("../img/bgteste.png")!important;
     height: 100vh!important;
+    justify-content: start;
 }
 
 
@@ -1180,7 +1181,8 @@ height: 100vh;
     height: 40%!important;
 }
 .container2{
-    justify-content: start;
+    padding-top: 60px;
+    
 }
 .itens{
     width: 100%;
@@ -1385,7 +1387,8 @@ height: 100vh;
 }
 .container2{
     padding-top: 0px;
-    justify-content: unset;
+    
+
 }
 .astropage2{
     display:none!important;
@@ -1398,6 +1401,7 @@ height: 100vh;
     background-image: url("../img/bgteste2.png")!important;
     background-size: cover!important;
     height: 100vh!important;
+    justify-content: start;
 }
 
 
@@ -1495,7 +1499,7 @@ height: 100vh;
         flex-direction: column-reverse;
     }
     .btnlogos{
-     
+        margin-top: 0px;
         width: 100%!important;
     }
     .logomarcas{
@@ -1505,7 +1509,7 @@ height: 100vh;
     }
     
     .logoagencia{
-        width: 60%!important;
+        width: 40%!important;
         
     }
     .astroslide{
@@ -1574,10 +1578,7 @@ height: 100vh;
     width: 400px;
     position: static!important;
 }
-.container2{
-    padding-top: 0px;
-    
-}
+
 .astropage2{
     display:none!important;
     opacity: 0!important;
@@ -1588,9 +1589,12 @@ height: 100vh;
 #slide2{
     background-image: url("../img/bgteste2.png")!important;
     background-size: cover!important;
+    justify-content: start;
     height: 100vh;
 }
-
+.container2{
+    padding-top: 60px;
+}
 
 .itensalign2{
     align-items: center;
@@ -1604,7 +1608,7 @@ height: 100vh;
 
 
 .titlepage2 h1{
-    margin-top: 50px;
+    margin-top: 0px;
     text-align: center;
 }
 
@@ -1691,19 +1695,19 @@ height: 100vh;
     }
     .logomarcas{
         width: 100%!important;
-        margin-top: 0%;
+        margin-top: 20%;
         height: 1px!important;
     }
     
     .logoagencia{
-        width: 60%!important;
+        width: 30%!important;
         
     }
     .astroslide{
         justify-content: center!important;
         height: 200px!important;
         width: 100vw!important;
-        margin-bottom: 300px;
+        margin-bottom: 0px;
     }
     
 
@@ -1810,6 +1814,9 @@ height: 100vh;
 
 }
 /*tela2*/
+.container2{
+    padding-top: 60px;
+}
 #slide2{
     background-image: url("../img/bg2_1000.png")!important;} 
 .astropage2{
@@ -1837,6 +1844,9 @@ height: 100vh;
 .alinhadivsfim{
     align-items: flex-end;
   
+}
+.logoshow{
+    height: 100%;
 }
 .astroslide{
     height: 100vh;
@@ -1888,9 +1898,20 @@ height: 100vh;
 
     width: 60%;
 }
+.logoshow{
+    height: 100%;
+}
+.logomarcas{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
 .logomarcas img{
-    margin-top: 10%;
+    margin-top: 0%;
     width: 50%!important;
+}
+.btnlogos{
+    margin-top: 0px;
 }
 }
 
