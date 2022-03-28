@@ -92,6 +92,9 @@ body{
 }
 
 header{
+    animation-delay:1s;
+    animation-name: slidetexte;
+    animation-duration: 3s;
     pointer-events: visiblePainted;
     z-index: 5;
     display: flex;
@@ -100,6 +103,11 @@ header{
     max-width: 100%;
     height: 150px;
     align-items: center;
+}
+.divlogo{
+    
+    animation-name: slidetexte;
+    animation-duration: 3s;
 }
 
 /*navbar1*/
@@ -325,6 +333,7 @@ nav a span:hover{
   }
 
   .nav-list2.active {
+    
     transform: translateX(-40px);
     position: fixed;
   }
@@ -397,6 +406,29 @@ nav a span:hover{
     z-index: 15;
     display: none;
     cursor: pointer;
+    
+  }
+  .mobile-menu.active img:hover{
+      animation: rodaimg 2s;
+  }
+ 
+  .mobile-menu.active img{
+    
+    animation: rodaimg 2s;
+  }.mobile-menu2.active img{
+    
+    animation: rodaimg 2s;
+  }
+  .mobile-menu3.active img{
+    
+    animation: rodaimg 2s;
+  }
+  @keyframes rodaimg {
+
+    100%{
+       transform:rotate(360deg);
+    }
+      
   }
   
   .mobile-menu div {
@@ -525,6 +557,7 @@ nav a span:hover{
     height: 100vh;
 }
 .itensalign2{
+    pointer-events: visiblePainted;
     display:flex;
     justify-content: right;
     align-items: end;
@@ -564,9 +597,11 @@ nav a span:hover{
 
 .pprincipalpage1{
     width: 50%;
+    text-align: center;
 }
 .pprincipalpage2{
     width: 50%;
+    text-align: center;
 }
 .videooo{
     background-color: #e2ccff;
@@ -748,7 +783,7 @@ nav a span:hover{
 }
 .btnlogos{
     margin-top:40px;
-    width: 65%;
+    width: 80%;
     height: 100px; 
     display: flex;
     justify-content: space-between; 
@@ -759,34 +794,77 @@ nav a span:hover{
     height: 70px;
     width: 70px;
 }
-.btnlogos1:hover{
-    background-image:url("../img/iconlabwhite.png");
-    border: none;
-    height: 70px;
-    width: 70px;
-}*/
+
 /*FIMTELA3*/
 .textebutton{
-    -webkit-transition: all 150ms ease-in-out;
-    transition: all 150ms ease-in-out;
+    
     animation-delay:1s;
     animation-name: slidetexte;
-    animation-duration: 5s;
+    animation-duration: 3s;
     margin-top: 12%;
     width: 480px;
+    
+    
 }
+
 .textebutton{
     margin-top: 10%;
+    transition: ease-in-out;
+    animation-name: slidetexte;
+    animation-duration: 3s;
+    
+}
+
+@keyframes slidetexte {
+    10%{
+        opacity: 0;
+        transform: translate(-1000px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0px);
+    }
 }
 .textebutton h1{
+    
     letter-spacing: 3px;
     font-size: 40px;
     color: #c3c4cb;
     font-family: 'fjalla one',sans-serif;}
 
 .textebutton h1 span{
+    pointer-events: visiblePainted;
     color: #8a38e0;
     font-family: 'fjalla one', sans-serif;
+}.textebutton h1 span:hover{
+    animation:trocacomuni 2s;
+    animation-iteration-count: infinite;
+    
+    color: #72afb5;
+    font-family: 'fjalla one', sans-serif;
+}
+
+.textebutton h1 span:nth-child(3){
+    color: #c3c4cb;
+    animation: piscapisca 2s;
+    animation-iteration-count:infinite; 
+    transition: none;
+}
+@keyframes piscapisca{
+    50%{
+        color: transparent;
+    }
+    100%{
+        color: #c3c4cb;
+    }
+}
+@keyframes trocacomuni {
+    50%{transition: ease-in-out;
+        color: #8a38e0;}
+        100%{
+            color: #72afb5;
+        }
 }
 .textebutton p{
     width: 430px;
@@ -801,6 +879,7 @@ nav a span:hover{
     font-weight: bold;
     font-size: 20px;
     color: #72afb5;
+    
 
 }
 .textebutton button{
@@ -837,39 +916,65 @@ nav a span:hover{
 .divborderalignresponsive{
     display: none;
 }
-@media screen and (min-height:280px) and (max-height:550px){
 
+@media screen and (min-height:280px) and (max-height:601px){
+
+    /*tela1*/
     .PrimeiraTela{
-        height: 180vh;
+        height: 100vh;
+    }
+    header{
+        
+        height: 100px;
     }
     #scene{
-        height: 180vh!important;
+        height: 100vh!important;
+    }
+    .textagencia{
+        height:3rem!important;
+    }
+    .textagencia2{
+        height:3rem!important;
+    }
+    .btnlogos{
+        margin-top: 0px;
+    }
+    .astroslide{
+        display: none;
     }
 
+
+
+    /*teladois*/
     #slide2{
-        height: 200vh!important;
+        height: 100vh!important;
     }
 
     #slide3{
-        height: 200vh!important;
+        height: 100vh!important;
         justify-content: unset!important;
         
     }
     .alinhadivsfim{
-        height: 200vh!important;
+        height: 100vh!important;
     }
     .container3{
-        height: 200vh;
+        height: 100vh;
         display: flex;
         align-items: center;
     }
-    .alinhadivsfim{
-        height: unset;
+   
+    .videooo{
+        height: 200px;
     }
 }
 
-
-@media screen and (min-width:320px) and (max-width: 500px) {
+@media screen and (min-height:601px) and (max-height:800px) {
+.logomarcas{
+    align-items: flex-end!important;
+}
+}
+@media screen and (min-width:240px) and (max-width:320px) {
     .PrimeiraTela{
         justify-content:flex-start!important;
     }
@@ -926,7 +1031,7 @@ nav a span:hover{
 
 .textebutton{
     margin-top: 30px;
-    width: 95vw!important;
+    width: 90vw!important;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1089,14 +1194,244 @@ height: 100vh;
 
 .astroslide{
     justify-content: center!important;
+    align-items:flex-end;
     height: 200px!important;
     width: 100vw!important;
-    margin-bottom: 300px;
+    margin-bottom: 200px;
 }
 
 
 
 }
+@media screen and (min-width:320px) and (max-width: 500px) {
+    .PrimeiraTela{
+        justify-content:flex-start!important;
+    }
+    
+    #scene{
+        background-image: url('../img/bgresponsivopri9meiro.png');
+        
+        background-size: cover;
+    }
+    .backgroundburaco{
+        display: none!important;
+        width:900px;
+        margin-top: 150px;
+        margin-left: 70px;
+        transform: rotate(90deg)!important;
+        left: inherit!important;
+        
+    }
+    .backgroundplaneta{
+        display: none!important;
+        width:900px;
+        margin-top: 250px;
+        margin-right: 300px;
+        transform: rotate(0deg)!important;
+        left: inherit!important;
+    }
+    .astro{
+        display: none!important;
+        width:900px;
+        margin-top: 250px;
+        margin-right: 300px;
+        transform: rotate(0deg)!important;
+        left: inherit!important; 
+    }
+
+    .container{
+        align-items: center;
+        
+    }
+    .logo{
+        width: 80%;
+    }
+    .divlogo{
+        display: flex;
+        align-items: center;
+        height: 150px;
+        width: 75%;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+.textebutton{
+    margin-top: 30px;
+    width: 90vw!important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.textebutton h1{
+    text-align: center;
+    font-size: 22px!important;
+}
+.textebutton p{
+    text-align: center!important;
+    font-size: 18px!important;
+    width: 90vw!important;
+}
+
+
+/*segundatelaa*/
+
+
+#slide2{
+    background-image: url('../img/bgteste.png')!important;
+    height: 100vh!important;
+}
+
+
+.itensalign2{
+    align-items: center;
+    height: 40%!important;
+    
+}
+.container2{
+    justify-content: start;
+}
+.itens{
+    width: 100%;
+    height: 50%;
+    text-align: center;
+}
+
+
+.titlepage2 h1{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.pprincipalpage1{
+    width: 100%!important;
+    max-height: 300px!important;
+}
+.pprincipalpage2{
+    width: 100%!important;
+}
+.videooo{
+    background-color: #e2ccff;
+    overflow: hidden;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+.video1{
+    margin: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: right; 
+}
+#btnleiamais{
+    pointer-events: visiblePainted;
+    background-color: transparent;
+    border: none;
+    color: #72afb5;
+    font-family: 'Calibri';
+    font-weight: bolder;
+    font-size:18px;
+}
+
+.navpage2{
+    opacity: 0;
+    display: none;
+    animation-name: none!important;
+    bottom: 0;
+    background-color: red;
+    width: 400px;
+    position: static!important;
+}
+
+.astropage2{
+    display:none!important;
+    opacity: 0!important;
+    z-index: -500;
+    margin-top:700px;
+    animation: none!important;
+}
+/*terceiratela*/
+#slide3{
+background-size:cover!important;
+height: 100vh;
+}
+.container3{
+    height: 100vh!important;
+    display: flex-end!important;
+    
+    padding-top: 30px!important;
+}
+.alinhadivsfim{
+    width: 90vw;
+    height: 100vh;
+    flex-direction: column!important;
+    justify-content: space-between!important;
+    align-items: center;
+}
+
+.textmarcas{
+    height: 100%;
+    width: 80vw!important;
+}
+.textarquelab{
+    width: 100%;
+    display: none;
+}
+.titulosmarcas{
+    display: none!important ;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.centralizabtn{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+.logoshow{
+    width: 80%!important;
+}
+.alinharosbtn{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.divborderalign{
+    margin-bottom: 80%;
+}
+.btnlogos{
+ 
+    width: 100%!important;
+}
+.logomarcas{
+    width: 80%!important;
+    margin-top: 65%;
+    height: 1px!important;
+}
+.logoagencia{
+    
+    width:350px!important;
+    margin-bottom: 100px;
+}
+
+.astroslide{
+    justify-content: center!important;
+    align-items:flex-end;
+    height: 200px!important;
+    width: 100vw!important;
+    margin-bottom: 200px;
+}
+
+
+
+} 
 
 @media screen and (min-width:500px) and (max-width: 600px) {
     #scene{
@@ -1150,7 +1485,7 @@ height: 100vh;
 
 .textebutton{
     margin-top: 30px;
-    width: 95vw!important;
+    width: 90vw!important;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1337,7 +1672,7 @@ height: 100vh;
         
     }
     .textebutton{
-        width: 95vw!important;
+        width: 90vw!important;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1505,7 +1840,7 @@ height: 100vh;
     .logomarcas{
         width: 100%!important;
         margin-top: 0%;
-        height: 1px!important;
+        height: 20vh!important;
     }
     
     .logoagencia{
@@ -1530,7 +1865,7 @@ height: 100vh;
         padding-top: 60px;
     }
     .textebutton{
-        width: 95vw!important;
+        width: 90vw!important;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1652,7 +1987,7 @@ height: 100vh;
     }
     .alinhadivsfim {
         width: 90%;
-        height: 100vh;
+        height: 100%;
         align-items: center;
         justify-content: space-between;
         display: flex;
@@ -1660,7 +1995,7 @@ height: 100vh;
     }
     
     .textmarcas{
-        height: 100%;
+        
         width: 80vw!important;
     }
     .textarquelab{
@@ -1700,14 +2035,15 @@ height: 100vh;
     }
     
     .logoagencia{
-        width: 30%!important;
+        width: 50%!important;
         
     }
     .astroslide{
+        align-items: flex-end;
         justify-content: center!important;
-        height: 200px!important;
+        height: 300px!important;
         width: 100vw!important;
-        margin-bottom: 0px;
+        margin-bottom: 0px!important;
     }
     
 
@@ -1739,6 +2075,10 @@ height: 100vh;
       z-index: 999;
       pointer-events: visiblePainted;
     }
+    header{
+        animation-delay:1s;
+        animation-name: none;
+        animation-duration: 3s;}
   
 
   /*nav2*/
@@ -1765,6 +2105,7 @@ height: 100vh;
       z-index: 999;
     display: block;
     pointer-events: visiblePainted;
+    
   }
 
 
@@ -1798,17 +2139,21 @@ height: 100vh;
 .backgroundburaco{
     z-index: -2;
     position: absolute;
-    width: 130%;
+    width: 200%;
+    left:unset!important;
 }
 .astro{
     z-index: -3;
     position: absolute;
-    width: 130%;
+    width: 200%;
+    left:unset!important;
+
 }
 .backgroundplaneta{
     z-index: -4;
     position: absolute!important; 
-    width: 130%;
+    width: 200%;
+    left:unset!important;
     
 
 
@@ -1849,7 +2194,7 @@ height: 100vh;
     height: 100%;
 }
 .astroslide{
-    height: 100vh;
+    
     align-items: flex-end;
     width: 40%;
 }
@@ -1868,17 +2213,20 @@ height: 100vh;
     .backgroundburaco{
         z-index: -2;
         position: absolute;
-        width: 130%;
+        width: 150%;
+        left:unset!important;
     }
     .astro{
         z-index: -3;
         position: absolute;
-        width: 130%;
+        width: 150%;
+        left:unset!important;
     }
     .backgroundplaneta{
         z-index: -4;
         position: absolute!important; 
-        width: 130%;
+        width: 150%;
+        left:unset!important;
         
     
     
@@ -1904,7 +2252,7 @@ height: 100vh;
 .logomarcas{
     height: 100vh;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
 }
 .logomarcas img{
     margin-top: 0%;
@@ -1920,17 +2268,20 @@ height: 100vh;
     .backgroundburaco{
         z-index: -2;
         position: absolute;
-        width: 105%;
+        width: 120%;
+        left:unset!important;
     }
     .astro{
         z-index: -3;
         position: absolute;
-        width: 110%;
+        width: 120%;
+        left:unset!important;
     }
     .backgroundplaneta{
         z-index: -4;
         position: absolute!important; 
-        width: 105%;
+        width: 120%;
+        left:unset!important;
         
     }
     .pprincipalpage1{
